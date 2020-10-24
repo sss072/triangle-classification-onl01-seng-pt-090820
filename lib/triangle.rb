@@ -1,6 +1,8 @@
 class Triangle
   
-  def initialize(length_one, length_2, length_3)
-
-
+  def initialize(length_one, length_two, length_three)
+    @length_one = length_one
+    @length_two = length_two 
+    @length_three = length_three
+  end 
 end
