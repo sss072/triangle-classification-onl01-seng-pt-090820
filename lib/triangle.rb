@@ -6,5 +6,13 @@ class Triangle
     @length_three = length_three
   end 
   def kind
-    if @length_one == @length_two 
+    validate_triangle
+    if a == b && b == c
+      :equilateral
+    elsif a == b || b == c || a == c
+      :isosceles
+    else
+      :scalene
+    end
+  end 
 end
